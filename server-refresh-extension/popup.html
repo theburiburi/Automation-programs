@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>서버시간 새로고침</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <h2>서버시간 기준 새로고침</h2>
+
+  <div class="time-box">
+    서버시간
+    <div id="serverTime">동기화 중...</div>
+  </div>
+
+  <div class="input-box">
+    <label>예약 시간 (24시간)</label>
+    <div class="time-input">
+      <input type="number" id="hour" min="0" max="23" placeholder="HH">
+      :
+      <input type="number" id="minute" min="0" max="59" placeholder="MM">
+      :
+      <input type="number" id="second" min="0" max="59" placeholder="SS">
+    </div>
+  </div>
+
+  <button id="reserveBtn">새로고침 예약</button>
+
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
