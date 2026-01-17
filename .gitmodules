@@ -1,0 +1,3 @@
+[submodule "my_private_logic"]
+	path = my_private_logic
+	url = https://github.com/theburiburi/secret-automation-SSAFY.git
